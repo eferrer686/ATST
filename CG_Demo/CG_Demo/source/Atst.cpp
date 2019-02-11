@@ -77,7 +77,14 @@ void Atst::draw() {
 }
 
 void Atst::update() {
-
+	float alfa = head->getRotY();
+	if (alfa >=0.0f && (alfa<=30.0f))
+	{
+		head->setRotY(alfa+.1);
+	}
+	else if (alfa <= 0.0f && (alfa <= -30.0f)) {
+		head->setRotY(alfa - .1);
+	}
 	head->update(x, y, z);
 	body->update(x, y, z);
 
