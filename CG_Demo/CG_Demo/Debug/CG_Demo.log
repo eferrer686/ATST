@@ -1,11 +1,11 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (CG_Demo.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
   Leg.cpp
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(101): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(118): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(130): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(134): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(143): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(145): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(149): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(175): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(113): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(130): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(142): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(146): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(155): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(157): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(161): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\leg.cpp(187): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
   CG_Demo.vcxproj -> C:\Users\LuisJuanCenturión\Documents\GitHub\ATST\CG_Demo\Debug\ATAT.exe

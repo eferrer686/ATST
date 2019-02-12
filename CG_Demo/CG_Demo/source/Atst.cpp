@@ -48,8 +48,10 @@ Atst::Atst()
 
 	head = new Head();
 	
-	leg[0] = new Leg(-.1, -100);
-	leg[1] = new Leg(+.1,-50);
+	leg[0] = new Leg(-.1, -99);
+	leg[1] = new Leg(-.1,-51);
+	//created a constructor for the angle to start at oposite angles
+	
 }
 
 
