@@ -48,8 +48,8 @@ Atst::Atst()
 
 	head = new Head();
 	
-	leg[0] = new Leg(-1);
-	leg[1] = new Leg(1);
+	leg[0] = new Leg(-.1, -100);
+	leg[1] = new Leg(+.1,-50);
 }
 
 
@@ -81,10 +81,10 @@ void Atst::update() {
 	
 	head->update(x, y, z);
 	body->update(x, y, z);
-
+	
 	leg[0] -> update(x-.5,y,z);
 	leg[1] -> update(x+.5,y,z);
 
-	rotY += 0.01;
+	//rotY += 0.01;
 	
 }

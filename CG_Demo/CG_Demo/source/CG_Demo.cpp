@@ -29,7 +29,6 @@
 
 #include <stdio.h>
 #include <math.h>
-
 #include "Atst.h"
 
 Atst* at = new Atst();
@@ -52,13 +51,13 @@ void display()							// Called for each frame (about 60 times per second).
 		//0.0, 0.0, 0.0,										// To where the camera points at.
 		//0.0, 1.0, 0.0);										// "UP" vector.
 
-	gluLookAt(10.0, 10.0, 10.0,										// Where the camera is.
-		0.0, 0.0, 0.0,										// To where the camera points at.
-		0.0, 1.0, 0.0);										// "UP" vector.
-
-	//gluLookAt(10.0, 0, 0,										// Where the camera is.
+	//gluLookAt(10.0, 10.0, 10.0,										// Where the camera is.
 	//	0.0, 0.0, 0.0,										// To where the camera points at.
 	//	0.0, 1.0, 0.0);										// "UP" vector.
+
+	gluLookAt(10.0, 0, 0,										// Where the camera is.
+		0.0, 0.0, 0.0,										// To where the camera points at.
+		0.0, 1.0, 0.0);										// "UP" vector.
 
 	at -> update();
 	at -> draw();
@@ -90,7 +89,6 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH | GLUT_RGB);		// Use 2 buffers (hidden and visible). Use the depth buffer. Use 3 color channels.
 	glutInitWindowSize(800, 800);
 	glutCreateWindow("CG first program");
-
 	init();
 	glutReshapeFunc(reshape);										// Reshape CALLBACK function.
 	glutDisplayFunc(display);										// Display CALLBACK function.

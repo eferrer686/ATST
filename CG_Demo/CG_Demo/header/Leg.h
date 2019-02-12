@@ -6,6 +6,7 @@ public:
 	~Leg();
 
 	Leg(float dir);
+	Leg::Leg(float dir, float _rotXL1);
 
 	float x, y, z;
 	float r, g, b;

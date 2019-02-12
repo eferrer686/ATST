@@ -69,6 +69,19 @@ Leg::Leg(float dir)
 	rotXL3 = 30;
 	rotXFeet = 30;
 }
+Leg::Leg(float dir, float _rotXL1)
+{
+	x = y = z = 0;
+	r = g = b = 0.5;
+
+	dirLeg = dir;
+
+	rotXL1 = _rotXL1;
+	rotXL2 = 110;
+	rotXL3 = 30;
+	rotXFeet = 30;
+}
+
 
 
 Leg::~Leg()
@@ -153,10 +166,15 @@ void Leg::update(float _x, float _y, float _z) {
 	x = _x;
 	y = _y;
 	z = _z;
-
-	if (rotXL1 < -100 || rotXL1 > -60) {
+	
+	if (rotXL1 <= -100 || rotXL1 >= -50) {
 		dirLeg *= -1;
+
 	}
 
-	rotXL1 += 0.05*dirLeg;
+	rotXL1 += 0.09*dirLeg;
+	//rotXL2 -=  -1*0.09*dirLeg;
+	//rotXL3 -= 0.1*dirLeg;
+	//rotXFeet -= .2*dirLeg;
+	
 }

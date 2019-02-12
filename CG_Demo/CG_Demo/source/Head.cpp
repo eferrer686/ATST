@@ -82,8 +82,8 @@ void Head::update(float _x, float _y, float _z) {
 	z = _z;
 
 	//Rotation cycle from 70° to - 70°
-	if (rotY > 50 || rotY < -50) { rotDir *= -1; }
-	rotY += 0.1*rotDir;
+	if (rotY > 50 || rotY < -50) { rotDir *= -1.0f; }
+	rotY += 0.01*rotDir;
 }
 
 
