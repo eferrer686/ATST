@@ -1,8 +1,10 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (CG_Demo.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
-  Atst.cpp
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\atst.cpp(83): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\atst.cpp(86): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\atst.cpp(91): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\atst.cpp(92): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\luisjuancenturión\documents\github\atst\cg_demo\cg_demo\source\atst.cpp(94): warning C4305: '+=': truncamiento de 'double' a 'float'
-  CG_Demo.vcxproj -> C:\Users\LuisJuanCenturión\Documents\GitHub\ATST\CG_Demo\Debug\ATAT.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (CG_Demo.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  Head.cpp
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(43): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(53): warning C4551: la llamada a la función no tiene lista de argumentos
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(55): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(58): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(69): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\edfmg\documents\itesm\graficas computacionales\atst\cg_demo\cg_demo\source\head.cpp(86): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  CG_Demo.vcxproj -> C:\Users\edfmg\Documents\ITESM\Graficas Computacionales\ATST\CG_Demo\Debug\ATAT.exe

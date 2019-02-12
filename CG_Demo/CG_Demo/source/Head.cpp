@@ -26,6 +26,7 @@
 Head::Head()
 {
 	rotY = 0;
+	rotDir = 1;
 }
 
 
@@ -37,32 +38,38 @@ void Head::draw()
 {
 	glPushMatrix();
 	{
+		
+		
 		glTranslatef(x, y + 1.25, z+0.25);
-		glScaled(0.9,.75, 1);
-		glutWireCube(1.5);
-		glPushMatrix;
+		glRotatef(rotY, 0, 1, 0);
+
+		glPushMatrix();
 		{
-			glTranslatef(x + 1, y, z-.8);
-			glutWireCylinder(.1, .7, 25, 2);
+			glScaled(0.9,.75, 1);
+			glutWireCube(1.5);
 		}
-		//glPopMatrix();
+
+		//lateral Cannons
 		glPushMatrix;
 		{
-			glTranslatef(x - 2, y, z);
+			glTranslatef(x + 0.85, 0, -1);
+			glutWireCylinder(.1, .7, 25, 2);
+		
+			glTranslatef(x - 1.7, 0, 0);
 			glutWireCylinder(.1, .7, 25, 2);
 		}
 		glPopMatrix();
+
+		//Front Cannons
 		glPushMatrix();
 		{
-			glTranslatef(x - .1, y + .60, z - 1.1);
+			glTranslatef(x-.1, y-.5, z-1.5);
+			glutWireCylinder(.1, .7, 25, 2);
+		
+			glTranslatef(x + .2, 0, 0);
 			glutWireCylinder(.1, .7, 25, 2);
 		}
 		glPopMatrix();
-		glPushMatrix();
-		{
-			glTranslatef(x + .1, y + .60, z - 1.1);
-			glutWireCylinder(.1, .7, 25, 2);
-		}
 		
 	}
 	glPopMatrix();
@@ -73,21 +80,10 @@ void Head::update(float _x, float _y, float _z) {
 	x = _x;
 	y = _y;
 	z = _z;
-	glPushMatrix();
-	{
-		glRotatef(rotY, _x, _y, _z);
-	}
-	glPopMatrix();
-	
+
+	//Rotation cycle from 70° to - 70°
+	if (rotY > 50 || rotY < -50) { rotDir *= -1; }
+	rotY += 0.1*rotDir;
 }
 
-float Head::getRotY()
-{
-	return rotY;
-}
-
-void Head::setRotY(float _rotY)
-{
-	rotY = _rotY;
-}
 

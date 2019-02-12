@@ -48,6 +48,26 @@ Leg::Leg()
 {
 	x = y = z = 0;
 	r = g = b = 0.5;
+
+	dirLeg = 1;
+
+	rotXL1 = -80;
+	rotXL2 = 110;
+	rotXL3 = 30;
+	rotXFeet = 30;
+}
+
+Leg::Leg(float dir)
+{
+	x = y = z = 0;
+	r = g = b = 0.5;
+
+	dirLeg = dir;
+
+	rotXL1 = -80;
+	rotXL2 = 110;
+	rotXL3 = 30;
+	rotXFeet = 30;
 }
 
 
@@ -59,7 +79,7 @@ void Leg::draw() {
 	glPushMatrix();
 	{
 		//Rotation and transate
-		glRotatef(-80, 1, 0, 0);
+		glRotatef(rotXL1, 1, 0, 0);
 		glTranslatef(x, y - 1, z);
 
 		//Matrix for scale and draw
@@ -75,7 +95,7 @@ void Leg::draw() {
 		{
 			//Rotation and translation - for second leg
 			glTranslatef(0, y - 1, 0);
-			glRotatef(110, 1, 0, 0);
+			glRotatef(rotXL2, 1, 0, 0);
 			glTranslatef(0, y-1, 0);
 			
 			
@@ -93,7 +113,7 @@ void Leg::draw() {
 			{
 				//Rotation and translation - for third leg
 				glTranslatef(0, y - 1, 0);
-				glRotatef(30, 1, 0, 0);
+				glRotatef(rotXL3, 1, 0, 0);
 				glTranslatef(0, y - 0.15, 0);
 				//Matrix for scale and draw - for third leg
 				glPushMatrix();
@@ -108,7 +128,7 @@ void Leg::draw() {
 				{
 					//Rotation and translation - for feet
 					glTranslatef(0, y - 0.4, 0);
-					glRotatef(30, 1, 0, 0);
+					glRotatef(rotXFeet, 1, 0, 0);
 					glTranslatef(0, y - 0.4, 0);
 					//Matrix for scale and draw - for feet
 					glPushMatrix();
@@ -133,4 +153,10 @@ void Leg::update(float _x, float _y, float _z) {
 	x = _x;
 	y = _y;
 	z = _z;
+
+	if (rotXL1 < -100 || rotXL1 > -60) {
+		dirLeg *= -1;
+	}
+
+	rotXL1 += 0.05*dirLeg;
 }

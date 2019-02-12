@@ -48,8 +48,8 @@ Atst::Atst()
 
 	head = new Head();
 	
-	leg[0] = new Leg();
-	leg[1] = new Leg();
+	leg[0] = new Leg(-1);
+	leg[1] = new Leg(1);
 }
 
 
@@ -77,14 +77,8 @@ void Atst::draw() {
 }
 
 void Atst::update() {
-	float alfa = head->getRotY();
-	if (alfa >=0.0f && (alfa<=30.0f))
-	{
-		head->setRotY(alfa+.1);
-	}
-	else if (alfa <= 0.0f && (alfa <= -30.0f)) {
-		head->setRotY(alfa - .1);
-	}
+	
+	
 	head->update(x, y, z);
 	body->update(x, y, z);
 
