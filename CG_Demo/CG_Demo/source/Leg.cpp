@@ -179,12 +179,12 @@ void Leg::update(float _x, float _y, float _z) {
 	y = _y;
 	z = _z;
 	
-	if (rotXL1 <= -100 || rotXL1 >= -50) {
+	if (rotXL1 <= -100 || rotXL1 >= -60) {
 		dirLeg *= -1;
 	}
 	rotXL1 += 0.09*dirLeg;
-	//rotXL2 -=  0.09*dirLeg;
-	//rotXL3 += 0.15*dirLeg;
-	//rotXFeet += .1*dirLeg;
+	rotXL2 +=  0.12*dirLeg;
+	rotXL3 += 0.15*dirLeg;
+	rotXFeet -= .33*dirLeg;
 	
 }

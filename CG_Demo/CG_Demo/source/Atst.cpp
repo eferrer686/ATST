@@ -47,9 +47,10 @@ Atst::Atst()
 	body = new Body();
 
 	head = new Head();
-	
-	leg[0] = new Leg(-.1, -99);
-	leg[1] = new Leg(-.1,-51);
+	leg[1] = new Leg(-.1);
+	leg[0] = new Leg(.1);
+	//leg[0] = new Leg(-.1, -99);
+	//leg[1] = new Leg(-.1,-61);
 	//created a constructor for the angle to start at oposite angles
 	
 }
